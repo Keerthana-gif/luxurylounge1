@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luxury Lounge Spa & Salon</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Luxury Lounge</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#book">Book</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Welcome to Luxury Lounge Spa & Salon</h2>
+      <p>Your ultimate destination for relaxation and style.</p><br><br>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <section id="about" class="container about">
+    <h2>About Us</h2>
+    <p>Luxury Lounge Spa & Salon began with a dream to create a peaceful haven where relaxation meets style. Our certified professionals are passionate about beauty and wellness.</p>
+  </section>
+
+  <section id="services" class="container services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <i class="fas fa-spa fa-3x"></i>
+        <h3>Facials & Skin Care</h3>
+        <p>Rejuvenate your skin with our expert treatments.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-cut fa-3x"></i>
+        <h3>Hair Styling</h3>
+        <p>Trendy cuts, coloring & styling tailored for you.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-hand-sparkles fa-3x"></i>
+        <h3>Manicure & Pedicure</h3>
+        <p>Luxurious nail care for perfect hands and feet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="container gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="./facial.webp" alt="Facial & Skin Care" />
+      <img src="./hait styling.avif" alt="Hair Styling" />
+      <img src="./manicure.webp" alt="Manicure" />
+      <img src="./pedicure.webp" alt="Pedicure" />
+      <img src="./massage.avif" alt="Massage" />
+      <img src="./hair cut.webp" alt="Haircut" />
+      <img src="./eyebrow shaping.jpg" alt="Eyebrow Shaping" />
+      <img src="./waxing.jpg" alt="Waxing" />
+    </div>
+  </section>
+
+  <section id="book" class="container booking">
+    <h2>Book an Appointment</h2>
+    <form id="bookingForm">
+      <input type="text" id="bname" placeholder="Your Name" required>
+      <input type="email" id="bemail" placeholder="Your Email" required>
+      <input type="date" id="date" required>
+      <select id="service">
+        <option value="facial">Facial</option>
+        <option value="hair">Hair Styling</option>
+        <option value="nails">Manicure & Pedicure</option>
+      </select>
+      <button type="submit">Book Now</button>
+    </form>
+    <div id="bookingMessage"></div>
+  </section>
+
+  <section id="contact" class="container-contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="formMessage"></div>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luxury Lounge Spa & Salon. All rights reserved.</p>
+  </footer>
+</body>
+</html>

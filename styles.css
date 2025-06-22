@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #fff8f0;
+  color: #4a4a4a;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #a77a5c;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  float: left;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #f4c06f;
+}
+
+header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+}
+
+.btn {
+  background: #f4c06f;
+  color: #4a4a4a;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #a77a5c;
+  color: #fff;
+}
+
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.service-cards, .gallery-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card, .gallery-grid img {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: 0.3s;
+}
+
+.card:hover, .gallery-grid img:hover {
+  transform: translateY(-10px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea, select, button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #a77a5c;
+  font-size: 1rem;
+}
+
+button {
+  background: #a77a5c;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f4c06f;
+  color: #4a4a4a;
+}
+
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #4a4a4a;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #a77a5c;
+}
+
+footer {
+  background: #a77a5c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.container-contact{
+  background: url("https://images.unsplash.com/photo-1665561741359-7af2d2fdc395?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhY2tncm91bmQlMjBpbWFnZSUyMHNvbGlkJTIwbWlsZCUyMGNvbG9ycyUyMGxpa2UlMjBicm93bnxlbnwwfHwwfHx8MA%3D%3D");
+}
